@@ -1,0 +1,89 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container text-center bg-dark text-white p-5">
+    <h2>ChannelRTC</h2>
+    <h6>
+        Viewers &nbsp; 
+        👁<span id="viewerCount">0</span>
+    </h6>
+    <div class="mt-4">
+        <img id="remoteImage" style="max-width: 100%; border: 2px solid #555;" />
+        <p id="status" class="text-muted mt-2">Waiting for connection...</p>
+        <p id="messageLog"> See logs here </p>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
+    <script>
+        const status = document.getElementById('status');
+        const remoteImage = document.getElementById('remoteImage');
+
+        const pc = new RTCPeerConnection({
+            iceServers: [{ urls: "stun:stun.l.google.com:19302" }]
+        });
+
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/connectionHub")
+            .build();
+
+        // WebRTC Events
+        pc.onicecandidate = (event) => {
+            if (event.candidate) {
+                connection.invoke("SendIceCandidate", "CHANNEL1", JSON.stringify(event.candidate));
+            }
+        };
+
+        pc.ondatachannel = (event) => {
+            const receiveChannel = event.channel;
+            status.innerText = "DataChannel Open: Receiving Noise...";
+
+            receiveChannel.onmessage = (e) => {
+                // Revoke old URL to prevent memory leaks
+                if (remoteImage.src) URL.revokeObjectURL(remoteImage.src);
+
+                const blob = new Blob([e.data], { type: 'image/jpeg' });
+                remoteImage.src = URL.createObjectURL(blob);
+            };
+        };
+
+        // SignalR Events
+        connection.on("ReceiveSignal", async (senderId, sdp) => {
+            const offer = { type : "offer", sdp: sdp}
+            await pc.setRemoteDescription(new RTCSessionDescription(offer));
+
+            const answer = await pc.createAnswer();
+            await pc.setLocalDescription(answer);
+
+            connection.invoke("SendAcknowledgement", senderId, pc.localDescription.sdp);
+        });
+
+        connection.on("ReceiveIceCandidate", async (candidate) => {
+            await pc.addIceCandidate(new RTCIceCandidate(JSON.parse(candidate)));
+        });
+
+        connection.on("ReceiveCount", (vcount) => {
+           const count = document.getElementById('viewerCount');
+           if (count) count.innerText = vcount;
+        });
+
+        connection.on("RemoveConnection", (viewerId) => {
+            document.body.style.backgroundColor = "#4a1111";
+            setTimeout(() => {
+                document.body.style.backgroundColor = "#FFFFFF";
+                const log = document.getElementById('messageLog');
+                if (log) log.innerText = `Viewer ${viewerId.substring(0,5)} disconnected.`;
+            }, 500);
+        });
+
+        connection.start().then(() => {
+            status.innerText = "SignalR Connected. Awaiting Offer...";
+            connection.invoke("JoinStream", "CHANNEL1");
+            connection.invoke("RequestFeed", "CHANNEL1");
+        });
+    </script>
+}

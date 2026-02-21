@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "dgSpecHash": "+E4araj2uaA=",
+  "success": true,
+  "projectFilePath": "D:\\WebRTCStream\\NoiseGenerator\\NoiseGenerator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dell\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\concentus\\2.2.2\\concentus.2.2.2.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\dnsclient\\1.8.0\\dnsclient.1.8.0.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\10.0.3\\microsoft.aspnetcore.connections.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client\\10.0.3\\microsoft.aspnetcore.http.connections.client.10.0.3.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.aspnetcore.http.connections.common\\10.0.3\\microsoft.aspnetcore.http.connections.common.10.0.3.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.aspnetcore.signalr.client\\10.0.3\\microsoft.aspnetcore.signalr.client.10.0.3.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\10.0.3\\microsoft.aspnetcore.signalr.client.core.10.0.3.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\10.0.3\\microsoft.aspnetcore.signalr.common.10.0.3.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\10.0.3\\microsoft.aspnetcore.signalr.protocols.json.10.0.3.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\10.0.3\\microsoft.extensions.dependencyinjection.10.0.3.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.3\\microsoft.extensions.dependencyinjection.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.features\\10.0.3\\microsoft.extensions.features.10.0.3.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.logging\\10.0.3\\microsoft.extensions.logging.10.0.3.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.3\\microsoft.extensions.logging.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.options\\10.0.3\\microsoft.extensions.options.10.0.3.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.3\\microsoft.extensions.primitives.10.0.3.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.win32.systemevents\\10.0.3\\microsoft.win32.systemevents.10.0.3.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\sipsorcery\\10.0.3\\sipsorcery.10.0.3.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\sipsorcery.websocketsharp\\0.0.1\\sipsorcery.websocketsharp.0.0.1.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\sipsorcerymedia.abstractions\\8.0.12\\sipsorcerymedia.abstractions.8.0.12.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\system.drawing.common\\10.0.3\\system.drawing.common.10.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
