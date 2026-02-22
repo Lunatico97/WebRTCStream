@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NoiseGenerator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b12e8935102a29b8aa1b999c028003ac9afbd417")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79840621134f66d9e562478a49e8ecfbead080a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("NoiseGenerator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NoiseGenerator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

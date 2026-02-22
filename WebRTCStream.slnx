@@ -1,4 +1,4 @@
 <Solution>
-  <Project Path="NoiseGenerator/NoiseGenerator.csproj" />
   <Project Path="WebRTCDemo/WebRTCDemo.csproj" />
+  <Project Path="WebRTCSource/WebRTCSource.csproj" />
 </Solution>
