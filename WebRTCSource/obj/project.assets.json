@@ -1063,11 +1063,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\WebRTCStream\\NoiseGenerator\\NoiseGenerator.csproj",
-      "projectName": "NoiseGenerator",
-      "projectPath": "D:\\WebRTCStream\\NoiseGenerator\\NoiseGenerator.csproj",
+      "projectUniqueName": "D:\\WebRTCStream\\WebRTCSource\\WebRTCSource.csproj",
+      "projectName": "WebRTCSource",
+      "projectPath": "D:\\WebRTCStream\\WebRTCSource\\WebRTCSource.csproj",
       "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-      "outputPath": "D:\\WebRTCStream\\NoiseGenerator\\obj\\",
+      "outputPath": "D:\\WebRTCStream\\WebRTCSource\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
