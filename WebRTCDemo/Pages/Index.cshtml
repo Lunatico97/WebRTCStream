@@ -11,7 +11,7 @@
         👁<span id="viewerCount">0</span>
     </h6>
     <div class="mt-4">
-        <img id="remoteImage" style="max-width: 100%; border: 2px solid #555;" />
+        <canvas id="remoteCanvas" style="max-width: 100%; border: 2px solid #555;"></canvas>
         <p id="status" class="text-muted mt-2">Waiting for connection...</p>
         <p id="messageLog"> See logs here </p>
     </div>
@@ -21,7 +21,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
     <script>
         const status = document.getElementById('status');
-        const remoteImage = document.getElementById('remoteImage');
+        const canvas = document.getElementById('remoteCanvas');
+        const ctx = canvas.getContext('2d');
 
         const pc = new RTCPeerConnection({
             iceServers: [{ urls: "stun:stun.l.google.com:19302" }]
@@ -30,6 +31,10 @@
         const connection = new signalR.HubConnectionBuilder()
             .withUrl("/connectionHub")
             .build();
+
+        // Canvas properties
+        canvas.width = 256;
+        canvas.height = 256;
 
         // WebRTC Events
         pc.onicecandidate = (event) => {
@@ -43,11 +48,13 @@
             status.innerText = "DataChannel Open: Receiving Noise...";
 
             receiveChannel.onmessage = (e) => {
-                // Revoke old URL to prevent memory leaks
-                if (remoteImage.src) URL.revokeObjectURL(remoteImage.src);
-
                 const blob = new Blob([e.data], { type: 'image/jpeg' });
-                remoteImage.src = URL.createObjectURL(blob);
+                createImageBitmap(blob).then(bitmap => {
+                    ctx.drawImage(bitmap, 0, 0);
+                    bitmap.close();
+                }).catch(err => {
+                    console.error("Rendering failed:", err);
+                });
             };
         };
 
@@ -71,13 +78,22 @@
            if (count) count.innerText = vcount;
         });
 
+        connection.on("AddConnection", (viewerId) => {
+            document.body.style.backgroundColor = "#114a11";
+            setTimeout(() => {
+                document.body.style.backgroundColor = "#FFFFFF";
+                const log = document.getElementById('messageLog');
+                if (log) log.innerText = `Viewer ${viewerId.substring(0,5)} joined.`;
+            }, 200);
+        });
+
         connection.on("RemoveConnection", (viewerId) => {
             document.body.style.backgroundColor = "#4a1111";
             setTimeout(() => {
                 document.body.style.backgroundColor = "#FFFFFF";
                 const log = document.getElementById('messageLog');
                 if (log) log.innerText = `Viewer ${viewerId.substring(0,5)} disconnected.`;
-            }, 500);
+            }, 200);
         });
 
         connection.start().then(() => {
