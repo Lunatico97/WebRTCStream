@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "D:\\WebRTCStream\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3D432E75-6EBF-B178-9AD1-2DD3653CE834}|WebRTCDemo\\WebRTCDemo.csproj|d:\\webrtcstream\\webrtcdemo\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D432E75-6EBF-B178-9AD1-2DD3653CE834}|WebRTCDemo\\WebRTCDemo.csproj|solutionrelative:webrtcdemo\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D432E75-6EBF-B178-9AD1-2DD3653CE834}|WebRTCDemo\\WebRTCDemo.csproj|d:\\webrtcstream\\webrtcdemo\\hubs\\connectionhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D432E75-6EBF-B178-9AD1-2DD3653CE834}|WebRTCDemo\\WebRTCDemo.csproj|solutionrelative:webrtcdemo\\hubs\\connectionhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3059A5ED-D0EE-8C74-3730-0EB0816C389D}|WebRTCSource\\WebRTCSource.csproj|d:\\webrtcstream\\webrtcsource\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3059A5ED-D0EE-8C74-3730-0EB0816C389D}|WebRTCSource\\WebRTCSource.csproj|solutionrelative:webrtcsource\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3D432E75-6EBF-B178-9AD1-2DD3653CE834}|WebRTCDemo\\WebRTCDemo.csproj|d:\\webrtcstream\\webrtcdemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D432E75-6EBF-B178-9AD1-2DD3653CE834}|WebRTCDemo\\WebRTCDemo.csproj|solutionrelative:webrtcdemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3059A5ED-D0EE-8C74-3730-0EB0816C389D}|WebRTCSource\\WebRTCSource.csproj|d:\\webrtcstream\\webrtcsource\\bmpnoisegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3059A5ED-D0EE-8C74-3730-0EB0816C389D}|WebRTCSource\\WebRTCSource.csproj|solutionrelative:webrtcsource\\bmpnoisegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3059A5ED-D0EE-8C74-3730-0EB0816C389D}|WebRTCSource\\WebRTCSource.csproj|d:\\webrtcstream\\webrtcsource\\webrtcsource.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3059A5ED-D0EE-8C74-3730-0EB0816C389D}|WebRTCSource\\WebRTCSource.csproj|solutionrelative:webrtcsource\\webrtcsource.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D432E75-6EBF-B178-9AD1-2DD3653CE834}|WebRTCDemo\\WebRTCDemo.csproj|d:\\webrtcstream\\webrtcdemo\\webrtcdemo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -18,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,20 +46,85 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WebRTCSource",
+              "DocumentMoniker": "D:\\WebRTCStream\\WebRTCSource\\WebRTCSource.csproj",
+              "RelativeDocumentMoniker": "WebRTCSource\\WebRTCSource.csproj",
+              "ToolTip": "D:\\WebRTCStream\\WebRTCSource\\WebRTCSource.csproj",
+              "RelativeToolTip": "WebRTCSource\\WebRTCSource.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-25T10:46:37.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConnectionHub.cs",
+              "DocumentMoniker": "D:\\WebRTCStream\\WebRTCDemo\\Hubs\\ConnectionHub.cs",
+              "RelativeDocumentMoniker": "WebRTCDemo\\Hubs\\ConnectionHub.cs",
+              "ToolTip": "D:\\WebRTCStream\\WebRTCDemo\\Hubs\\ConnectionHub.cs",
+              "RelativeToolTip": "WebRTCDemo\\Hubs\\ConnectionHub.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAACkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T10:46:25.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\WebRTCStream\\WebRTCDemo\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebRTCDemo\\Pages\\Index.cshtml",
+              "ToolTip": "D:\\WebRTCStream\\WebRTCDemo\\Pages\\Index.cshtml",
+              "RelativeToolTip": "WebRTCDemo\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAiwF8AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-25T10:29:53.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\WebRTCStream\\WebRTCDemo\\Program.cs",
               "RelativeDocumentMoniker": "WebRTCDemo\\Program.cs",
               "ToolTip": "D:\\WebRTCStream\\WebRTCDemo\\Program.cs",
               "RelativeToolTip": "WebRTCDemo\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAmwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-22T23:15:08.27Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\WebRTCStream\\WebRTCSource\\Program.cs",
+              "RelativeDocumentMoniker": "WebRTCSource\\Program.cs",
+              "ToolTip": "D:\\WebRTCStream\\WebRTCSource\\Program.cs",
+              "RelativeToolTip": "WebRTCSource\\Program.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAUwHsAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T23:31:11.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BMPNoiseGenerator.cs",
+              "DocumentMoniker": "D:\\WebRTCStream\\WebRTCSource\\BMPNoiseGenerator.cs",
+              "RelativeDocumentMoniker": "WebRTCSource\\BMPNoiseGenerator.cs",
+              "ToolTip": "D:\\WebRTCStream\\WebRTCSource\\BMPNoiseGenerator.cs",
+              "RelativeToolTip": "WebRTCSource\\BMPNoiseGenerator.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T23:31:05.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "WebRTCDemo.csproj",
               "DocumentMoniker": "D:\\WebRTCStream\\WebRTCDemo\\WebRTCDemo.csproj",
               "RelativeDocumentMoniker": "WebRTCDemo\\WebRTCDemo.csproj",

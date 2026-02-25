@@ -37,6 +37,11 @@ public class ConnectionHub : Hub
         await Clients.Client(receiverId).SendAsync("ReceiveIceCandidate", Context.ConnectionId, candidate);
     }
 
+    public async Task AddConnection(string receiverId)
+    {
+        await Clients.All.SendAsync("AddConnection", receiverId);
+    }
+
     public override async Task OnDisconnectedAsync(Exception? exception)
     {
         await Clients.All.SendAsync("RemoveConnection", Context.ConnectionId);

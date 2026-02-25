@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebRTCSource")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79840621134f66d9e562478a49e8ecfbead080a4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbc3078bc138ffc9a11f47c389133b7e3949be00")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebRTCSource")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebRTCSource")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

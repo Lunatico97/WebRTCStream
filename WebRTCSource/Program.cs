@@ -121,6 +121,7 @@ class Program
 
                     // Send count
                     await connection.InvokeAsync("SendCount", peers.Count);
+                    await connection.InvokeAsync("AddConnection", senderId);
                 }
             }
         });
