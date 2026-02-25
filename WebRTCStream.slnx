@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="WebRTCDemo/WebRTCDemo.csproj" />
+  <Project Path="WebRTCSource/WebRTCSource.csproj" />
+</Solution>
